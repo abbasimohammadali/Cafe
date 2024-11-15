@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+}
+
+.box-header {
+    background-image: url(../image/antique-cafe-bg-01.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(0 0 0 / 42%);
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(6px);
+}
+
+.line-box-header {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.line-box-header .list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    padding: 10px;
+    margin-right: 100px;
+}
+
+.list .item-list {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.list .item-list:hover .item-menu {
+    border-bottom: 4px solid #CC9966;
+}
+
+.list .item-list>a {
+    padding: 15px 20px;
+    color: #CC9966;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.box-container-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 70px 200px 150px;
+}
+
+.intro-titel-content ,
+.intro-content ,
+.box-btn-intro {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.intro-titel-content {
+    margin: 10px auto;
+    padding: 30px;
+    text-align: center;
+    width: 450px;
+}
+
+.intro-titel-content>h1 {
+    color: white;
+    line-height: 2;
+    font-size: 50px;
+}
+
+.intro-titel-content>p {
+    color: #CC9966;
+    line-height: 2;
+    font-size: 22px;
+}
+
+.intro-content {
+    width: 450px;
+    margin: 10px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.intro-content>p {
+    line-height: 2;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+}
+
+.intro-content>p>a {
+    color: #FF6;
+}
+
+.intro-content>p>a:hover {
+    color: #9FF;
+}
+
+.box-btn-intro {
+    width: fit-content;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.btn-intro {
+    padding: 30px;
+}
+
+.btn-intro>a>span {
+    color: #CC9966;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.box-btn-intro:hover .btn-intro>a>span {
+    color: white;
+}
+
+/* section 2 */
+
+.container-menu {
+    background-image: url(../image/antique-cafe-bg-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.box-content-menu {
+    padding: 10rem;
+}
+
+.header-content-menu {
+    background-color: white;
+    font-size: 20px;
+    margin: auto;
+    width: fit-content;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+
+.header-content-menu>h2 {
+    font-weight: 500;
+    line-height: 2;
+    padding: 8px 40px;
+}
+
+.content-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box-menu-right {
+    width: 520px;
+    background-color: #544639;
+    padding: 2.5rem 2rem;
+    margin: 1.25rem;
+}
+
+.box-menu-left {
+    width: 520px;
+    background-color: #544639;
+    padding: 2.5rem 2rem;
+    margin: 1.25rem;
+}
+
+.item-menu-rtl {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.item-menu-rtl>img {
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.text-item-menu-rtl {
+    margin-left: 1.5rem;
+}
+
+.text-item-menu-rtl>h3 {
+    color: #FC6;
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+.text-item-menu-rtl>p {
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+}
+
+.item-menu-ltr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.text-menu-ltr {
+    text-align: right;
+}
+
+.text-menu-ltr>h3 {
+    color: #FC6;
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+.text-menu-ltr>p {
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+}
+
+.text-menu-ltr {
+    margin-right: 1.5rem;
+}
+
+.item-menu-ltr>img {
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+/* section 3 */
+
+.container-about {
+    background-image: url(../image/antique-cafe-bg-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.box-about {
+    position: absolute;
+    left: 53%;
+    margin-top: 10%;
+}
+
+.text-box-about {
+    background-color: rgba( 255 , 255 , 255 , 0.8);
+    width: 500px;
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+}
+
+.text-box-about>h2 {
+    color: #006666;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 2;
+}
+
+.text-box-about>p {
+    line-height: 2;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.text-box-about>p>a {
+    color: #006666;
+}
+
+.btn-contact {
+    background-color: #006666;
+    color: white;
+    font-size: 19px;
+    line-height: 2;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    padding: 12px 40px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #0a8585;
+    color: white;
+}
+
+/* section 4 */
+
+.container-contact {
+    position: relative;
+    background-image: url(../image/antique-cafe-bg-04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container-contact h3 {
+     position: absolute;
+     bottom: -0.5rem;
+     width: 100%;
+     background-color: #0000008a;
+     color: #747474;
+     text-align: center;
+     padding-block: 0.5rem;
+     font-size: 1.3rem;
+}
+
+.box-text-contact {
+    background-color: rgba( 255 , 255 , 255 , 0.8);
+    position: absolute;
+    right: 55%;
+    top: 10%;
+    width: 520px;
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+}
+
+.box-text-contact>h2 {
+    color: #006666;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 2;
+}
+
+.box-text-contact>p {
+    line-height: 2;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.box-text-contact>p>a {
+    color: #066;
+}
+
+.btn-maps {
+    margin: 40px 0;
+}
+
+.btn-maps>a  {
+    background-color: #006666;
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    line-height: 2;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    padding: 12px 40px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.btn-maps>a:hover {
+    background-color: #0a8585;
+    color: white;
+}
+
+.box-form-contact {
+    position: absolute;
+    background-color: rgba( 0 , 0 , 0 , 0.5);
+    left: 55%;
+    top: 10%;
+    width: 520px;
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+}
+
+.form-contact>input ,
+.form-contact>textarea {
+    background-color: rgba( 0 , 0 , 0 , 0);
+    width: 100%;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid #CC9966;
+}
+
+.form-contact>input::placeholder ,
+.form-contact>textarea::placeholder {
+    color: white;
+    padding: 10px;
+} 
+
+.form-contact>input:focus ,
+.form-contact>textarea:focus {
+    outline: none !important;
+    border: 1px solid #CC9966;
+    box-shadow: 0 0 10px #b67533;
+}
+
+.btn-submit {
+    text-align: right;
+}
+
+.btn-submit>button {
+    background-color: rgba( 0 , 0 , 0 , 0);
+    color: white;
+    border: 0;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.btn-submit>button:hover {
+    color: rgba(245 , 158 , 11 , 1);
+}
